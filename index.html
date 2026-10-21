@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pequenas Ações, Grande Planeta</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    section { padding-top: 4.5rem; padding-bottom: 4.5rem; }
+    .hero {
+      background: linear-gradient(135deg, #198754, #0d6efd);
+      color: #fff;
+      padding-top: 8rem;
+      padding-bottom: 5rem;
+    }
+    .slide {
+      height: 320px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 1rem 3rem;
+    }
+    .slide-1 { background: linear-gradient(135deg, #0d6efd, #0dcaf0); }
+    .slide-2 { background: linear-gradient(135deg, #198754, #75b798); }
+    .slide-3 { background: linear-gradient(135deg, #fd7e14, #ffc107); }
+    .icone { font-size: 2.5rem; color: #198754; }
+    .numero { font-size: 2.5rem; font-weight: 700; color: #198754; }
+    footer { background: #145c3a; color: #fff; }
+  </style>
+</head>
+<body>
+
+  <!-- COMPONENTE 1: NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#inicio"><i class="bi bi-recycle"></i> Planeta Vivo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
+          <li class="nav-item"><a class="nav-link" href="#dicas">Dicas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#numeros">Números</a></li>
+          <li class="nav-item"><a class="nav-link" href="#duvidas">Dúvidas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cadastro">Cadastro</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="inicio" class="hero text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Pequenas ações, grande planeta 🌎</h1>
+      <p class="lead my-4">
+        Reciclar, economizar água e consumir com consciência ajudam a cumprir a Agenda 2030 da ONU.
+        Tudo começa no seu dia a dia!
+      </p>
+      <a href="#cadastro" class="btn btn-light btn-lg me-2">Quero participar</a>
+      <a href="#dicas" class="btn btn-outline-light btn-lg">Ver dicas</a>
+    </div>
+  </header>
+
+  <!-- COMPONENTE 2: CAROUSEL -->
+  <section id="destaques" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Por que isso importa?</h2>
+      <div id="carrossel" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carrossel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slide slide-1">
+              <i class="bi bi-droplet-half display-3"></i>
+              <h3>Água é um recurso limitado</h3>
+              <p>Apenas uma pequena parte da água do planeta é doce e própria para consumo.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide slide-2">
+              <i class="bi bi-trash3 display-3"></i>
+              <h3>O lixo precisa ir para o lugar certo</h3>
+              <p>Separar o lixo reciclável ajuda a reduzir a poluição e gera renda para catadores.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide slide-3">
+              <i class="bi bi-lightbulb display-3"></i>
+              <h3>Energia também se economiza</h3>
+              <p>Apagar a luz e desligar aparelhos reduz a conta e o impacto ambiental.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrossel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPONENTE 3: CARDS (grid responsivo) -->
+  <section id="dicas">
+    <div class="container">
+      <h2 class="text-center mb-2">Dicas para o dia a dia</h2>
+      <p class="text-center text-muted mb-5">Coisas simples que qualquer pessoa pode fazer.</p>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm text-center">
+            <div class="card-body">
+              <i class="bi bi-recycle icone"></i>
+              <h5 class="card-title mt-3">Recicle</h5>
+              <p class="card-text">Separe papel, plástico, vidro e metal. Lave as embalagens antes de descartar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm text-center">
+            <div class="card-body">
+              <i class="bi bi-droplet icone"></i>
+              <h5 class="card-title mt-3">Economize água</h5>
+              <p class="card-text">Tome banhos mais curtos e feche a torneira enquanto escova os dentes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm text-center">
+            <div class="card-body">
+              <i class="bi bi-bag-check icone"></i>
+              <h5 class="card-title mt-3">Consuma com consciência</h5>
+              <p class="card-text">Antes de comprar, pense: eu preciso mesmo disso? Prefira produtos duráveis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm text-center">
+            <div class="card-body">
+              <i class="bi bi-bicycle icone"></i>
+              <h5 class="card-title mt-3">Mova-se melhor</h5>
+              <p class="card-text">Use bicicleta, ande a pé ou vá de transporte público quando puder.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm text-center">
+            <div class="card-body">
+              <i class="bi bi-egg-fried icone"></i>
+              <h5 class="card-title mt-3">Não desperdice comida</h5>
+              <p class="card-text">Planeje as refeições, aproveite sobras e faça compostagem com cascas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm text-center">
+            <div class="card-body">
+              <i class="bi bi-plug icone"></i>
+              <h5 class="card-title mt-3">Poupe energia</h5>
+              <p class="card-text">Desligue aparelhos da tomada e prefira lâmpadas de LED.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS -->
+  <section id="numeros" class="bg-light">
+    <div class="container text-center">
+      <h2 class="mb-5">Agenda 2030 em números</h2>
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <div class="numero">17</div>
+          <p>Objetivos de Desenvolvimento Sustentável</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="numero">169</div>
+          <p>Metas para alcançar</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="numero">193</div>
+          <p>Países da ONU assinaram</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="numero">2030</div>
+          <p>Ano limite para cumprir</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPONENTE 4: ACCORDION -->
+  <section id="duvidas">
+    <div class="container" style="max-width: 800px;">
+      <h2 class="text-center mb-4">Dúvidas frequentes</h2>
+      <div class="accordion" id="acordeao">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#d1">
+              O que é a Agenda 2030?
+            </button>
+          </h3>
+          <div id="d1" class="accordion-collapse collapse show" data-bs-parent="#acordeao">
+            <div class="accordion-body">
+              É um plano global da ONU com 17 objetivos para acabar com a pobreza, proteger o planeta e garantir
+              paz e prosperidade para todas as pessoas até 2030.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d2">
+              Uma pessoa sozinha faz diferença?
+            </button>
+          </h3>
+          <div id="d2" class="accordion-collapse collapse" data-bs-parent="#acordeao">
+            <div class="accordion-body">
+              Faz sim! Quando muita gente muda pequenos hábitos, o resultado é enorme. Além disso, suas atitudes
+              inspiram família e amigos.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#d3">
+              Quais ODS têm ligação com o dia a dia?
+            </button>
+          </h3>
+          <div id="d3" class="accordion-collapse collapse" data-bs-parent="#acordeao">
+            <div class="accordion-body">
+              Principalmente o ODS 6 (água potável), ODS 7 (energia limpa), ODS 11 (cidades sustentáveis) e
+              ODS 12 (consumo e produção responsáveis).
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO DE CADASTRO -->
+  <section id="cadastro" class="bg-light">
+    <div class="container" style="max-width: 700px;">
+      <h2 class="text-center mb-2">Faça parte da mudança</h2>
+      <p class="text-center text-muted mb-4">Cadastre-se para receber dicas de sustentabilidade.</p>
+
+      <div id="sucesso" class="alert alert-success d-none" role="alert"></div>
+
+      <form id="formCadastro" class="card card-body shadow-sm needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome completo</label>
+          <input type="text" class="form-control" id="nome" required minlength="3">
+          <div class="invalid-feedback">Digite seu nome (mínimo 3 letras).</div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" required>
+          <div class="invalid-feedback">Digite um e-mail válido.</div>
+        </div>
+        <div class="mb-3">
+          <label for="interesse" class="form-label">Qual tema te interessa mais?</label>
+          <select class="form-select" id="interesse" required>
+            <option value="">Escolha...</option>
+            <option>Reciclagem</option>
+            <option>Economia de água</option>
+            <option>Consumo consciente</option>
+            <option>Energia</option>
+          </select>
+          <div class="invalid-feedback">Escolha uma opção.</div>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="aceite" required>
+          <label class="form-check-label" for="aceite">Aceito receber dicas por e-mail</label>
+          <div class="invalid-feedback">Você precisa marcar essa opção.</div>
+        </div>
+        <button type="submit" class="btn btn-success btn-lg">Cadastrar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-1">🌱 Planeta Vivo – Projeto escolar sobre a Agenda 2030</p>
+      <small>Feito com HTML, Bootstrap e JavaScript</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const form = document.getElementById("formCadastro");
+    const sucesso = document.getElementById("sucesso");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.classList.add("was-validated");
+        return;
+      }
+
+      const nome = document.getElementById("nome").value.trim();
+      sucesso.innerText = "Obrigado, " + nome + "! Seu cadastro foi realizado com sucesso. 🌱";
+      sucesso.classList.remove("d-none");
+
+      form.reset();
+      form.classList.remove("was-validated");
+    });
+  </script>
+</body>
+</html>
