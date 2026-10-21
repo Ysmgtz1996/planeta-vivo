@@ -6,7 +6,7 @@ O site mostra como atitudes simples, como reciclar, economizar água e consumir 
 
 ## 🔗 Site publicado
 
-> Troque pelo seu link: `https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/`
+> Troque pelo seu link: `(https://ysmgtz1996.github.io/planeta-vivo/)`
 
 ## 🛠️ Tecnologias usadas
 
