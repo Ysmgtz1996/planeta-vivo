@@ -53,6 +53,4 @@ Parte do projeto foi criada com ajuda de IA (Claude). O código foi estudado e s
 
 ## 👥 Equipe
 
-- Nome 1
-- Nome 2
-- Nome 3
+Yasmin
